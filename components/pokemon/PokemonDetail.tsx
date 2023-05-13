@@ -10,7 +10,6 @@ interface Props {
 export const PokemonDetail: FC<Props> = ({pokemon}) => {
   const [exists, setExist] = useState(false);
   useEffect(() => {
-    console.log(pokemon)
     setExist(favorites.existInFavorites(pokemon.id))
   },[])
   
@@ -30,7 +29,6 @@ export const PokemonDetail: FC<Props> = ({pokemon}) => {
     })
   }
 
-  console.log(exists)
   
   return (
     <Grid.Container css={{marginTop: '5px'}} gap={2}>

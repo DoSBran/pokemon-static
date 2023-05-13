@@ -12,7 +12,6 @@ interface Props {
 }
 
 const PokemonsByName: FC<Props> = ({ pokemon }) => {
-    console.log(pokemon)
   return (
     <LayOut title={`Pokemon ${pokemon.name}`} >
       <PokemonDetail pokemon={pokemon} />
